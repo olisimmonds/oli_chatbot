@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "oli-chatbot"
+version = "0.1.0"
+description = ""
+authors = ["olisimmonds <102732150+olisimmonds@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "oli_chatbot"}]
+
+[tool.poetry.dependencies]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
