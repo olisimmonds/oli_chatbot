@@ -11,9 +11,10 @@ def load_docs(doc_paths):
     docs = []
     for file_path in doc_paths:
         loader = PyPDFLoader(file_path)
-        docs.extend(loader.load())  # Extend to handle multiple pages properly
+        docs.extend(loader.load())  
     return docs
 
+# Split documents using a recursive character splitter 
 def get_split_docs():
     documents = load_docs(doc_paths)
     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)

@@ -6,10 +6,11 @@ st.set_page_config(
     page_icon="static\chat_bot_logo.png" 
 )
 
-# Initialize chat history
+# Initialise chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
+# Top of page display
 col1, col2 = st.columns([5, 1])
 with col1:
     st.write("")
@@ -24,7 +25,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # React to user input
-if prompt := st.chat_input("What is up?"):
+if prompt := st.chat_input("Ask something about Oli..."):
     # Display user message in chat message container
     st.chat_message("user").markdown(prompt)
     # Add user message to chat history
