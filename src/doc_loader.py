@@ -2,7 +2,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # Document Paths
-cv_doc_path = "docs/CV_june_24.pdf"
+cv_doc_path = "docs/Simmonds_CV_Feb_25.pdf"
 linkedin_doc_path = "docs/LinkedIn Profile as of 20-25.pdf"
 doc_paths = [cv_doc_path, linkedin_doc_path]
 
